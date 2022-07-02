@@ -7,6 +7,7 @@
 *executed and prits out based on a condition
 *Return : always 0
 */
+// this is function decleration with it return type
 int main(void)
 {
 	int n;
@@ -19,5 +20,5 @@ int main(void)
 		printf("%d is zero\n", n);
 	if (n < 0)
 		printf("%d is negative\n", n);
-	return 0;
+	return (0);
 }
