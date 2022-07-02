@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
-*main -> assign a random number to the variable n each tie it is 
+*main -> assign a random number to the variable n each the it is
 *executed and prits out based on a condition
 *Return : always 0
 */
-int main(void)
+int main(void)// this specifies there are no arguments taken by main
 {
 	int n;
 
