@@ -7,7 +7,7 @@
 *executed and prits out based on a condition
 *Return : always 0
 */
-// this is function decleration with it return type
+
 int main(void)
 {
 	int n;
