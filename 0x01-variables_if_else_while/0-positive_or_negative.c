@@ -4,10 +4,10 @@
 
 /**
 *main -> assign a random number to the variable n each the it is
-*executed and prits out based on a condition
 *Return : always 0
 */
-int main(void){
+int main(void)
+{
 	int n;
 
 	srand(time(0));
