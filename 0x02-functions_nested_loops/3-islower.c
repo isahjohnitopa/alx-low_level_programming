@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower(int c) - For lower character
+ * _islower - For lower character
  * Return: return 1 or 0 otherwise
  */
 
