@@ -2,6 +2,7 @@
 
 /**
  * _islower - For lower character
+ * @c: parameter
  * Return: return 1 or 0 otherwise
  */
 
