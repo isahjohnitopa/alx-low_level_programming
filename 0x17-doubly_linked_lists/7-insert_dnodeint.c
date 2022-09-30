@@ -1,4 +1,4 @@
-#include "list"
+#include "lists.h"
 
 /**
  * insert_dnodeint_at_index - Insertsa new node at
@@ -23,7 +23,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		head = *h;
 		i = 1;
 		if (head != NULL)
-			while (head->prev != Null)
+			while (head->prev != NULL)
 				head = head->prev;
 		while (head != NULL)
 		{
@@ -45,7 +45,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 				}
 				break;
 			}
-			head = head->next
+			head = head->next;
 			i++;
 		}
 	}
