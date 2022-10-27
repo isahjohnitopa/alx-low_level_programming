@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * _isdigit - check if variable is digit
- * @c: variable to check
+ * _memcpy - main function
+ * @dest: destination address
+ * @src: source address
+ * @n: integer variable
  * Return: returns zero
  */
 
-int _isdigit(int c)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	return (0);
 }
