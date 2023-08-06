@@ -15,5 +15,6 @@ int main(void)
     str[1] = 'K';
     str[2] = '\0';
     printf("%s\n", str);
+    free(str);
     return (0);
 }
