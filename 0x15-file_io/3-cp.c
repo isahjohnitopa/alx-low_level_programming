@@ -68,7 +68,7 @@ int main(int ac, char **av)
 	dest = open(av[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	error_handler(src, dest, av);
 	r =  BUFFER_SIZE;
-	
+
 	while (r == BUFFER_SIZE)
 	{
 		r = read(src, buffer, BUFFER_SIZE);
