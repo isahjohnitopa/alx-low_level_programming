@@ -34,10 +34,10 @@ int main(int ac, char **av)
 		w = write(to, buff, r);
 		if (to == -1 || w == -1)
 		{
-                        dprintf(2, "Error: Can't write to  %s\n", av[2]);
-                        free(buff);
-                        exit(99);
-                }
+			dprintf(2, "Error: Can't write to  %s\n", av[2]);
+			free(buff);
+			exit(99);
+		}
 
 		r = read(from, buff, 1024);
 		to = open(av[2], O_WRONLY | O_APPEND);
@@ -58,7 +58,7 @@ int main(int ac, char **av)
  */
 char *create_buffer(char *file)
 {
-	char *buffer; 
+	char *buffer;
 
 	buffer = malloc(sizeof(char) * 1024);
 	if (!buffer)
