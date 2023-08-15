@@ -3,8 +3,14 @@
 
 #include <stdio.h>
 
-
-typedef struct dog {
+/**
+ * struct dog - the struct data type
+ * @name: the name field
+ * @age: the age field
+ * @owner: the owner field
+ */
+typedef struct dog
+{
 	char *name;
 	float age;
 	char *owner;
