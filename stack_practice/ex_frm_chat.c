@@ -57,6 +57,21 @@ int peek(Stack *stack)
 	return (stack->data[stack->top]);
 }
 
+void display(Stack *stack)
+{
+	if (isEmpty(stack))
+	{
+		printf("Stack is empty\n");
+		return;
+	}
+	
+	while (!isEmpty(stack))
+	{
+		printf("%d \n", stack->data[stack->top--]);
+	}
+/*	printf("\n");*/
+}
+
 int main(void)
 {
 	Stack stack;
@@ -69,17 +84,21 @@ int main(void)
 		scanf("%d", &value);
 		push(&stack, value);
 	}
-/**
-	push(&stack, 10);
-	push(&stack, 20);
-	push(&stack, 30);
-*/
+
+
 	printf("--------------------\n");
 
 	printf("Peek: %d\n", peek(&stack));
 	
 	printf("--------------------\n");
 
+	display(&stack);
+
+	printf("--------------------\n");
+
+	display(&stack);
+	
+	printf("--------------------\n");
 	while (!isEmpty(&stack))
 	{
 		printf("No. %d be Popped is: %d\n", i, pop(&stack));
