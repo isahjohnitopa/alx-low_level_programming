@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX_SIZE 10
+#define MAX_SIZE 5
 
 typedef struct stack
 {
@@ -60,18 +60,31 @@ int peek(Stack *stack)
 int main(void)
 {
 	Stack stack;
+	int value, i = 1;
 	init(&stack);
-
+	
+	while (!isFull(&stack))
+	{
+		printf("Enter a value to push\n");
+		scanf("%d", &value);
+		push(&stack, value);
+	}
+/**
 	push(&stack, 10);
 	push(&stack, 20);
 	push(&stack, 30);
+*/
+	printf("--------------------\n");
 
 	printf("Peek: %d\n", peek(&stack));
 	
 	printf("--------------------\n");
 
 	while (!isEmpty(&stack))
-		printf("After I Popped: %d\n", pop(&stack));
+	{
+		printf("No. %d be Popped is: %d\n", i, pop(&stack));
+		i++;
+	}
 
 	return (0);
 }
